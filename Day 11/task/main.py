@@ -4,7 +4,6 @@ import random
 def calculate_score(cards):
     score = sum(cards)
     if len(cards) == 2 and score == 21:
-        #TODO check if the len check needed
         return 0
     while score > 21 and 11 in cards:
         cards[cards.index(11)] = 1
